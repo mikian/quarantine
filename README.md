@@ -8,6 +8,7 @@ The quarantine gem supports testing frameworks:
 
 The quarantine gem supports CI pipelines:
 - [Buildkite](https://buildkite.com/docs/tutorials/getting-started)
+- [Jenkins](https://jenkins.io)
 
 If you are interested in using quarantine but it does not support your CI or testing framework, feel free to reach out or create an issue and we can try to make it happen.
 
@@ -150,5 +151,5 @@ To get AWS credentials, please contact your AWS administrator to get access to d
 More detailed information can be found: [AWS documentation](https://docs.aws.amazon.com/sdkforruby/api/Aws/S3/Client.html)
 
 #### Why is `example.clear_exception` failing locally?
- 
+
  `example.clear_exception` is an attribute added through `rspec_retry`. Make sure `rspec-retry` has been installed and configured.

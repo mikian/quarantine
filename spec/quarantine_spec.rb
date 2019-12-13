@@ -107,7 +107,7 @@ describe Quarantine do
       expect(quarantine.failed_tests[0].id).to eq(example.id)
       expect(quarantine.failed_tests[0].full_description).to eq(example.full_description)
       expect(quarantine.failed_tests[0].location).to eq(example.location)
-      expect(quarantine.failed_tests[0].build_number).to eq(quarantine.buildkite_build_number)
+      expect(quarantine.failed_tests[0].build_number).to eq(quarantine.build_number)
     end
   end
 
@@ -121,7 +121,7 @@ describe Quarantine do
       expect(quarantine.flaky_tests[0].id).to eq(example.id)
       expect(quarantine.flaky_tests[0].full_description).to eq(example.full_description)
       expect(quarantine.flaky_tests[0].location).to eq(example.location)
-      expect(quarantine.flaky_tests[0].build_number).to eq(quarantine.buildkite_build_number)
+      expect(quarantine.flaky_tests[0].build_number).to eq(quarantine.build_number)
     end
   end
 
